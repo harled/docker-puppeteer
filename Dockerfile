@@ -25,4 +25,7 @@ RUN mkdir -p /app/node_modules
 # /app as the default work directory
 WORKDIR /app
 
+# log the image build date
+RUN echo "docker-puppeteer="$(date +"%Y-%m-%d %H:%M %Z") >> /DOCKER_IMAGE_BUILD_HISTORY
+
 EXPOSE 3001
