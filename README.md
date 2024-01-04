@@ -11,6 +11,6 @@ See the list of [Docker Hub tags](https://hub.docker.com/r/krsyoung/puppeteer/ta
 
 ## Releasing
 
-1. docker build --no-cache -t puppeteer:1.0.4 .
-2. docker tag puppeteer:1.0.4 krsyoung/puppeteer:1.0.4
-3. docker push krsyoung/puppeteer:1.0.4
+1. docker build --no-cache -t puppeteer:1.0.5 .
+2. docker tag puppeteer:1.0.5 krsyoung/puppeteer:1.0.5
+3. docker push krsyoung/puppeteer:1.0.5
