@@ -25,5 +25,4 @@ WORKDIR /app
 # log the image build date
 RUN echo "docker-puppeteer="$(date +"%Y-%m-%d %H:%M %Z") >> /DOCKER_IMAGE_BUILD_HISTORY
 
-# USER pptruser
 EXPOSE 3001
