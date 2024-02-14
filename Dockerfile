@@ -1,5 +1,5 @@
 # reference https://github.com/puppeteer/puppeteer/blob/main/docker/Dockerfile
-FROM node:20-slim
+FROM node:21-slim
 
 # Install latest chrome dev package and fonts to support major charsets (Chinese, Japanese, Arabic, Hebrew, Thai and a few others)
 # Note: this installs the necessary libs to make the bundled version of Chrome that Puppeteer
@@ -18,6 +18,8 @@ RUN  apt-get update \
 
 # storage for node_modules
 RUN mkdir -p /app/node_modules
+
+ENV DBUS_SESSION_BUS_ADDRESS autolaunch:
 
 # /app as the default work directory
 WORKDIR /app
